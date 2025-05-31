@@ -1,0 +1,13 @@
+a=int(input("a="))
+b=int(input("b="))
+c=int(input("c="))
+D=int(b**2-4*a*c)
+if D<0:
+    print("коренів немає")
+elif D==0:
+    x1=int((-b+D**(1/2))/(2*a))
+    print("x1=", x1)
+else:
+    x1=int((-b+D**(1/2))/(2*a))
+    x2=int((-b-D**(1/2))/(2*a))
+    print("x1=", x1, "x2=", x2)
